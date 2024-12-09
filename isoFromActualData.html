@@ -1,0 +1,414 @@
+<html>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.6/turf.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+ <!-- <script src="turf.7.1.0.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.9.0/mapbox-gl.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="isobands.js"></script>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #map {
+        /* * * * * */
+        display: none;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    #leafMap {
+        /* top: 100vh; */
+        width: calc(100vw - 20px);
+        height: 100vh;
+    }
+    svg path:focus {
+        outline: none !important;
+    }
+
+    .intersections {
+        /* stroke-width: 1px; */
+        stroke-opacity: 0.15;
+        /* stroke: #fff; */
+        /*filter: drop-shadow(2px 2px 2px #000);*/
+    }
+    .boundary {
+        stroke-width: 1px;
+        stroke-opacity: 0.9;
+        stroke: #444;
+        fill-opacity: 0;
+    }
+    .points {
+        stroke-width: 1px;
+        stroke-opacity: 0.9;
+        stroke: #444;
+        fill: teal;
+    }
+
+    .menu-ui {
+        /* * * * * */
+        display: none;
+
+        background: #fff;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    .menu-ui a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    .menu-ui a:first-child {
+        border-radius: 3px 3px 0 0;
+    }
+
+    .menu-ui a:last-child {
+        border: none;
+        border-radius: 0 0 3px 3px;
+    }
+
+    .menu-ui a:hover {
+        background: #f8f8f8;
+        color: #404040;
+    }
+
+    .menu-ui a.active {
+        background: #3887be;
+        color: #fff;
+    }
+
+    .menu-ui a.active:hover {
+        background: #3074a4;
+    }
+</style>
+
+<body>
+
+    <nav id='menu-ui' class='menu-ui'></nav>
+    <div id='map'></div>
+    <div id='leafMap'></div>
+
+
+</body>
+
+<script language="javascript">
+
+let leaflet_rangeGroups = {};
+
+const plotPoints = true;
+const polygonSmooth_iterations = 0; // 0: off
+const str_visualStyle = 'heat'; // default, heat, snow
+
+localStyleISObands = ( f, l ) => {
+
+    let style = leaflet_rangeGroups[ f.properties.value ][ str_visualStyle ];
+    return style;
+}
+
+localStylePoints = ( f, l ) => {
+
+    return { fillColor: '#04FF00', fillOpacity: 0.8, color: '#444', radius: 3, weight: 0 };
+
+}
+
+getKEGeoJSON(  ( boundaryFeatures ) => {
+
+    let boundaries = {
+        type: "FeatureCollection",
+        name: "boundaries",
+        crs: {
+            type: "name",
+            properties: {
+                name: "urn:ogc:def:crs:OGC:1.3:CRS84"
+            }
+        },
+        features: boundaryFeatures
+    };
+
+    let edgeBoundaries = JSON.parse( JSON.stringify( boundaries ) );
+
+    getPointData( ( pointData) => {
+
+        let pointArr = [], refPoints = [];
+        
+        for ( var i = 0; i < pointData.length; i++ )
+        {
+            let row = pointData[ i ];
+
+            // if ( row?.data?.deviceUtilization )
+            // {
+            //     let val = row?.data?.deviceUtilization[ '*' ] || 0
+            //     let point = turf.point( row.viewMode.geometry.coordinates, { id: row.id, name: row.name, code: row.code, level: row.level, value: parseFloat( val ).toString() } )
+
+            //     pointArr.push( point );
+            // }
+
+            if ( row?.data?.historicReferrals )
+            {
+                // let val = ( row?.data?.historicReferrals.sum || 0 ) > 100 ? 100 : ( row?.data?.historicReferrals.sum || 0 );
+                let val = ( row?.data?.historicReferrals.sum || 0 );
+                let point = turf.point( [ row.viewMode.geometry.coordinates[ 1 ], row.viewMode.geometry.coordinates[ 0 ] ] , { id: row.id, name: row.name, code: row.code, level: row.level, value: parseFloat( val.toFixed(2) ).toString() } )
+
+                pointArr.push( point );
+                refPoints.push( { coords: row.viewMode.geometry.coordinates, val: ( row?.data?.historicReferrals?.sum || 0 ) } )
+            }
+
+        }
+
+        // need points (with z-Values), e.g. node.properties.metric.capacity
+        var points = turf.featureCollection( pointArr );
+
+        console.log('points', points);
+
+        var interpolate_options = {
+            gridType: "points",
+            property: "value",
+            units: "degrees",
+            weight: 25
+        };
+
+        let grid = turf.interpolate( points, 0.01, interpolate_options );
+        grid.features.map((i) => (i.properties.value = i.properties.value.toFixed(2)));
+
+        var isobands_options = {
+            zProperty: "value",
+            commonProperties: {
+                "fill-opacity": 0.8
+            },
+            breaksProperties: [
+                { fill: "#e3e3ff" },
+                { fill: "#c6c6ff" },
+                { fill: "#a9aaff" },
+                { fill: "#8e8eff" },
+                { fill: "#7171ff" },
+                { fill: "#5554ff" },
+                { fill: "#3939ff" },
+                { fill: "#1b1cff" },
+                { fill: "#1b1cff" },
+                { fill: "#1b1cff" },
+                { fill: "#1b1cff" }
+            ],
+            default: [
+                { fill: "#e3e3ff", fillColor: "#e3e3ff", fillOpacity: 0.65 },
+                { fill: "#c6c6ff", fillColor: "#c6c6ff", fillOpacity: 0.7 },
+                { fill: "#a9aaff", fillColor: "#a9aaff", fillOpacity: 0.75 },
+                { fill: "#8e8eff", fillColor: "#8e8eff", fillOpacity: 0.8 },
+                { fill: "#7171ff", fillColor: "#7171ff", fillOpacity: 0.85 },
+                { fill: "#5554ff", fillColor: "#5554ff", fillOpacity: 0.9 },
+                { fill: "#5554ff", fillColor: "#5554ff", fillOpacity: 0.95 },
+                { fill: "#3939ff", fillColor: "#3939ff", fillOpacity: 0.95 },
+                { fill: "#1b1cff", fillColor: "#1b1cff", fillOpacity: 0.9 },
+                { fill: "#1b1cff", fillColor: "#1b1cff", fillOpacity: 0.95 },
+                { fill: "#1b1cff", fillColor: "#1b1cff", fillOpacity: 1 },
+            ],
+            snow: [
+                { fillColor: "#fff", fillOpacity: 0.7 },
+                { fillColor: "#fff", fillOpacity: 0.75 },
+                { fillColor: "#fff", fillOpacity: 0.8 },
+                { fillColor: "#fff", fillOpacity: 0.85 },
+                { fillColor: "#fff", fillOpacity: 0.9 },
+                { fillColor: "#fff", fillOpacity: 0.95 },
+                { fillColor: "#fff", fillOpacity: 0.95 },
+                { fillColor: "#fff", fillOpacity: 0.95 },
+                { fillColor: "#fff", fillOpacity: 1 },
+                { fillColor: "#fff", fillOpacity: 1 },
+                { fillColor: "#fff", fillOpacity: 1 }
+            ],
+            heat: [
+                { fillColor: "#9B68FB", fillOpacity: 0.2 },
+                { fillColor: "#0301FB", fillOpacity: 0.3 },
+                { fillColor: "#6AFB00", fillOpacity: 0.4 },
+                { fillColor: "#FCFB08", fillOpacity: 0.5 },
+                { fillColor: "#FF9C0D", fillOpacity: 0.65 },
+                { fillColor: "red", fillOpacity: 0.75 },
+                { fillColor: "red", fillOpacity: 0.85 },
+                { fillColor: "red", fillOpacity: 1 },
+                { fillColor: "#750044", fillOpacity: 0.9 },
+                { fillColor: "#750044", fillOpacity: 1 },
+                { fillColor: "#000", fillOpacity: 0.85 }
+            ]
+        };
+
+        // var isoBand_rangeGroups = [1, 10, 20, 30, 50, 70, 100];
+        var isoBand_rangeGroups = [1, 10, 20, 30, 50, 70, 80, 90, 100, 500, 1000, 10000];
+
+        let isobands = turf.isobands(
+            grid,
+            isoBand_rangeGroups,
+            isobands_options
+        );
+
+        leaflet_rangeGroups = {
+            '1-10': { default: isobands_options.default[ 0 ], heat: isobands_options.heat[ 0 ], snow: isobands_options.snow[ 0 ] },
+            '10-20': { default: isobands_options.default[ 1 ], heat: isobands_options.heat[ 1 ], snow: isobands_options.snow[ 1 ] },
+            '20-30': { default: isobands_options.default[ 2 ], heat: isobands_options.heat[ 2 ], snow: isobands_options.snow[ 2 ] },
+            '30-50': { default: isobands_options.default[ 3 ], heat: isobands_options.heat[ 3 ], snow: isobands_options.snow[ 3 ] },
+            '50-70': { default: isobands_options.default[ 4 ], heat: isobands_options.heat[ 4 ], snow: isobands_options.snow[ 4 ] },
+            '70-80': { default: isobands_options.default[ 5 ], heat: isobands_options.heat[ 5 ], snow: isobands_options.snow[ 5 ] },
+            '80-90': { default: isobands_options.default[ 6 ], heat: isobands_options.heat[ 6 ], snow: isobands_options.snow[ 6 ] },
+            '90-100': { default: isobands_options.default[ 7 ], heat: isobands_options.heat[ 7 ], snow: isobands_options.snow[ 7 ] },
+            '100-500': { default: isobands_options.default[ 8 ], heat: isobands_options.heat[ 8 ], snow: isobands_options.snow[ 8 ] },
+            '500-1000': { default: isobands_options.default[ 9 ], heat: isobands_options.heat[ 9 ], snow: isobands_options.snow[ 9 ] },
+            '1000-10000': { default: isobands_options.default[ 10 ], heat: isobands_options.heat[ 10 ], snow: isobands_options.snow[ 10 ] }
+        }
+
+
+        boundaries = turf.flatten( boundaries );
+        isobands = turf.flatten( isobands );
+
+        let interSectionFeatures = [];
+
+        isobands.features.forEach(function (layer1) {
+
+            boundaries.features.forEach(function (layer2) {
+                let intersection = null;
+                try {
+                    intersection = turf.intersect(layer1, layer2);
+                } catch (e) {
+                    layer1 = turf.buffer(layer1, 0);
+                    intersection = turf.intersect(layer1, layer2);
+                }
+                if (intersection != null) {
+                    intersection.properties = layer1.properties;
+                    intersection.id = Math.random() * 100000;
+                    interSectionFeatures.push(intersection);
+                }
+            });
+        });
+
+        if ( polygonSmooth_iterations )
+        {
+            // note: smooth works excellently for 'peak' areas with high elevation/values; but not for lower areas > creates appearance of 'gaps' in lower layers
+            for ( var i = 0; i < interSectionFeatures.length; i++ )
+            {
+                let feature = interSectionFeatures[ i ];
+
+                try{ 
+                    // if ( feature.geometry.coordinates.length < 5 )
+                    {
+                        let polygon = turf.polygon( feature.geometry.coordinates );
+                        var smoothed = turf.polygonSmooth( polygon, { iterations: polygonSmooth_iterations } );
+
+                        console.log( i, feature.geometry.coordinates, smoothed.features[ 0 ].geometry.coordinates );
+                        feature.geometry.coordinates = smoothed.features[ 0 ].geometry.coordinates;
+                    }
+                }
+                catch(err){
+                    console.log( err, feature)
+                }
+
+            }
+
+        }
+
+        let intersections = turf.featureCollection( interSectionFeatures );
+
+
+        console.log( 'intersections', intersections );
+
+        
+            let mapCreationSettings = { renderer: L.svg( { padding: 500 } ) };
+            let leafmap = new L.Map( 'leafMap', mapCreationSettings );
+
+            L.control.scale( { position: 'bottomleft', metric: true, imperial: false, maxWidth: 150 } ).addTo( leafmap );
+            L.control.zoom( { position: 'topright' } ).addTo( leafmap );
+
+            var OpenStreetMap_HOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '<img src="images/cropped-fav-32x32.png" style="width:16px;height:16px;padding: 0 0 0 2px;margin: 2px 0 0 0;position: relative;top: 2px;">',
+                attributionActual: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+            });
+
+            OpenStreetMap_HOT.addTo( leafmap, { 'opacity': 1 } );  
+
+
+
+            console.log( 'boundaries', boundaries );
+            console.log( 'intersections', intersections );
+
+            getFINDcountiesGeoJSON(  ( counties ) => {
+
+                let findBoundaries = {
+                    type: "FeatureCollection",
+                    name: "boundaries",
+                    crs: {
+                        type: "name",
+                        properties: {
+                            name: "urn:ogc:def:crs:OGC:1.3:CRS84"
+                        }
+                    },
+                    features: counties
+                };
+
+                let findBoundaryCollection = L.geoJson( findBoundaries, {
+                        className: 'boundary', 
+                }).addTo( leafmap );
+
+                console.log( 'findBoundaries', findBoundaries );
+                console.log( 'findBoundaryCollection', findBoundaryCollection );
+                leafmap.fitBounds( findBoundaryCollection.getBounds(), { padding: [1, 1] } );
+
+                if ( intersections.features.length )
+                {
+                    let isoBoundaryCollection = L.geoJson( intersections, {
+                            style: localStyleISObands,
+                            className: 'intersections', 
+                            onEachFeature: onEachBoundaryFeature
+                    }).addTo( leafmap );
+
+                    leafmap.fitBounds( isoBoundaryCollection.getBounds(), { padding: [1, 1] } );
+                }
+
+                if ( isobands.features.length && 1 == 2 )
+                {
+                    let isoBoundaryCollection = L.geoJson( isobands, {
+                            style: localStyleISObands,
+                            className: 'intersections', 
+                            onEachFeature: onEachBoundaryFeature
+                    }).addTo( leafmap );
+
+                    // leafmap.fitBounds( isoBoundaryCollection.getBounds(), { padding: [1, 1] } );
+                }
+
+
+
+                if ( plotPoints )
+                {
+                    for ( var i = 0; i < refPoints.length; i ++ )
+                    {
+                        let feature = refPoints[ i ];
+                        let marker = L.circleMarker( feature.coords, localStylePoints() ).addTo( leafmap );
+                        let popup = marker.bindTooltip( '<h4>' + feature?.val + '</h4>' );
+                    }
+
+                }
+
+            })
+
+        })
+
+    })
+
+</script>
+
+</html>
