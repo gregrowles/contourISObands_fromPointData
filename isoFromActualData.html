@@ -7,6 +7,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<!-- <script src="leaflet.js"></script> -->
+<script src="SmoothWheelZoom.js"></script>
 <script src="isobands.js"></script>
 
 <style>
@@ -34,10 +37,11 @@
     }
 
     .intersections {
-        /* stroke-width: 1px; */
+        stroke-width: 1px;
         stroke-opacity: 0.15;
-        /* stroke: #fff; */
-        /*filter: drop-shadow(2px 2px 2px #000);*/
+        stroke: #fff;
+        /* filter: drop-shadow(2px 2px 2px #000); */
+        filter: drop-shadow(0px -4px 4px rgba(0,0,0,0.65));
     }
     .boundary {
         stroke-width: 1px;
@@ -45,12 +49,12 @@
         stroke: #444;
         fill-opacity: 0;
     }
-    .points {
+    /* .points {
         stroke-width: 1px;
         stroke-opacity: 0.9;
         stroke: #444;
         fill: teal;
-    }
+    } */
 
     .menu-ui {
         /* * * * * */
@@ -116,8 +120,35 @@
 let leaflet_rangeGroups = {};
 
 const plotPoints = true;
-const polygonSmooth_iterations = 0; // 0: off
-const str_visualStyle = 'heat'; // default, heat, snow
+const polygonSmooth_iterations = 3; // 0: off
+const str_visualStyle = 'snow'; // default, heat, snow
+
+sturgesRule = (n) => {
+  if (n <= 1) return 1; // edge case
+  return Math.ceil(1 + Math.log2(n));
+}
+
+createClassRanges = (min, max, classes) => {
+  if (classes < 1) throw new Error("Number of classes must be >= 1");
+  if (max <= min) throw new Error("Max must be greater than min");
+
+  const range = max - min;
+  const classWidth = range / classes;
+  const ranges = [];
+
+  for (let i = 0; i < classes; i++) {
+    const lower = min + i * classWidth;
+    const upper = i === classes - 1 
+      ? max  // ensure last bin ends exactly at max
+      : min + (i + 1) * classWidth;
+
+    ranges.push({
+      min: parseFloat(lower.toFixed(2)),
+      max: parseFloat(upper.toFixed(2))
+    });
+  }
+  return ranges;
+}
 
 localStyleISObands = ( f, l ) => {
 
@@ -127,7 +158,7 @@ localStyleISObands = ( f, l ) => {
 
 localStylePoints = ( f, l ) => {
 
-    return { fillColor: '#04FF00', fillOpacity: 0.8, color: '#444', radius: 3, weight: 0 };
+    return { fillColor: '#04FF00', fillOpacity: 0.8, color: '#444', radius: 3, weight: 1, className: 'points'  };
 
 }
 
@@ -175,6 +206,11 @@ getKEGeoJSON(  ( boundaryFeatures ) => {
 
         }
 
+        let rangeVals = refPoints.map( row => parseFloat( row.val ) ).sort( (a,b) => a - b );
+
+        console.log( 'SturgesRule', pointArr.length, sturgesRule( pointArr.length ) );
+        console.log( 'refPoints', refPoints.length, rangeVals );
+        console.log( 'createClassRanges', createClassRanges( rangeVals[0], rangeVals[ rangeVals.length -1 ], sturgesRule( rangeVals.length ) ) );
         // need points (with z-Values), e.g. node.properties.metric.capacity
         var points = turf.featureCollection( pointArr );
 
@@ -184,7 +220,7 @@ getKEGeoJSON(  ( boundaryFeatures ) => {
             gridType: "points",
             property: "value",
             units: "degrees",
-            weight: 25
+            weight: 10
         };
 
         let grid = turf.interpolate( points, 0.01, interpolate_options );
@@ -327,7 +363,7 @@ getKEGeoJSON(  ( boundaryFeatures ) => {
         console.log( 'intersections', intersections );
 
         
-            let mapCreationSettings = { renderer: L.svg( { padding: 500 } ) };
+            let mapCreationSettings = { renderer: L.svg( { padding: 500 } ), scrollWheelZoom: false, smoothWheelZoom: true, smoothSensitivity: 1 };
             let leafmap = new L.Map( 'leafMap', mapCreationSettings );
 
             L.control.scale( { position: 'bottomleft', metric: true, imperial: false, maxWidth: 150 } ).addTo( leafmap );
