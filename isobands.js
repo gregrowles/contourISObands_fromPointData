@@ -1,4 +1,16 @@
+/**
+ * @fileoverview Isobands generation from point data using Turf.js
+ * Fetches geographic boundaries and point data, interpolates values across a grid,
+ * generates isoband polygons, and clips them to the boundary region.
+ */
 
+/**
+ * Makes an asynchronous GET request using jQuery AJAX.
+ * @async
+ * @param {string} fetchURL - The URL to fetch data from.
+ * @param {Object} [getData] - Optional query parameters to send with the request.
+ * @returns {Promise<Object>} The JSON response data.
+ */
 runAsyncGet = async ( fetchURL, getData ) => {
 
 	let resolveDataGet = new Promise((resolve, reject) => {
@@ -24,6 +36,13 @@ runAsyncGet = async ( fetchURL, getData ) => {
 
 	return result
 }
+/**
+ * Wraps runAsyncGet in a Promise for async/await usage.
+ * @async
+ * @param {string} getUrl - The URL to fetch data from.
+ * @param {Object} [data] - Optional query parameters.
+ * @returns {Promise<Object>} The JSON response data.
+ */
 asyncGetData = async ( getUrl, data ) => {
 
 	let resolveGet = new Promise(function(resolve, reject) {
@@ -37,6 +56,12 @@ asyncGetData = async ( getUrl, data ) => {
 	return newData;
 
 }
+/**
+ * Fetches county boundary GeoJSON data from `find.counties.json`.
+ * @async
+ * @param {Function} [callback] - Optional callback receiving the result. If omitted, returns a Promise.
+ * @returns {Promise<Object>|void} GeoJSON FeatureCollection of county boundaries.
+ */
 getFINDcountiesGeoJSON = async ( callback ) => {
 
     var url = 'find.counties.json';
@@ -45,6 +70,12 @@ getFINDcountiesGeoJSON = async ( callback ) => {
 	if ( callback ) callback( result )
 	else return result;
 }
+/**
+ * Returns a hardcoded GeoJSON MultiPolygon feature representing a sample region.
+ * @async
+ * @param {Function} [callback] - Optional callback receiving the result. If omitted, returns a Promise.
+ * @returns {Promise<Array<Object>>|void} Array containing a single GeoJSON Feature.
+ */
 getRNDGeoJSON = async ( callback ) => {
 
     let result = [ {
@@ -134,6 +165,12 @@ getRNDGeoJSON = async ( callback ) => {
     if ( callback ) callback( result );
     else return result;
 }
+/**
+ * Fetches Kenya administrative boundary GeoJSON from `ke.json`.
+ * @async
+ * @param {Function} [callback] - Optional callback receiving the result. If omitted, returns a Promise.
+ * @returns {Promise<Object>|void} GeoJSON FeatureCollection of Kenya boundaries.
+ */
 getKEGeoJSON = async ( callback ) => {
 
     var url = 'ke.json'; //'kenya.geojson';
@@ -142,6 +179,12 @@ getKEGeoJSON = async ( callback ) => {
 	if ( callback ) callback( result )
 	else return result;
 }
+/**
+ * Fetches Kenya GeoJSON from `kenya.geojson`.
+ * @async
+ * @param {Function} [callback] - Optional callback receiving the result. If omitted, returns a Promise.
+ * @returns {Promise<Object>|void} GeoJSON FeatureCollection.
+ */
 getKenyaGeoJSON = async ( callback ) => {
 
     var url = 'kenya.geojson';
@@ -150,6 +193,13 @@ getKenyaGeoJSON = async ( callback ) => {
 	if ( callback ) callback( result )
 	else return result;
 }
+/**
+ * Fetches point data from `point.data.json`.
+ * Each record is expected to contain geographic coordinates and associated metric values.
+ * @async
+ * @param {Function} [callback] - Optional callback receiving the result. If omitted, returns a Promise.
+ * @returns {Promise<Array<Object>>|void} Array of point data records.
+ */
 getPointData = async ( callback ) => {
 
     var url = 'point.data.json';
@@ -158,6 +208,12 @@ getPointData = async ( callback ) => {
 	if ( callback ) callback( result )
 	else return result;
 }
+/**
+ * Fetches laboratory data from `labs.data.json`.
+ * @async
+ * @param {Function} [callback] - Optional callback receiving the result. If omitted, returns a Promise.
+ * @returns {Promise<Array<Object>>|void} Array of lab data records.
+ */
 getLabData = async ( callback ) => {
 
     var url = 'labs.data.json';
@@ -167,6 +223,21 @@ getLabData = async ( callback ) => {
 	else return result;
 }
 
+/**
+ * Main function that orchestrates isoband generation:
+ * 1. Fetches Kenya boundary GeoJSON and point data.
+ * 2. Converts point data records to Turf.js point features with `value` properties
+ *    derived from `historicReferrals.sum`.
+ * 3. Interpolates values across a 0.05-degree grid using IDW (Inverse Distance Weighting).
+ * 4. Generates isoband polygons for predefined value break ranges.
+ * 5. Clips isobands to the Kenya boundary via polygon intersection.
+ * 6. Logs the final clipped intersection FeatureCollection to the console.
+ *
+ * @returns {void}
+ *
+ * @example
+ * turfISObands();
+ */
 turfISObands = () => {
 
     getKEGeoJSON( ( boundaries ) => {
@@ -285,15 +356,36 @@ turfISObands = () => {
 
 }
 
+/**
+ * Leaflet `onEachFeature` handler for boundary layers.
+ * Binds a sticky tooltip displaying the feature's `value` property.
+ * @param {Object} feature - GeoJSON feature object.
+ * @param {Object} layer - Leaflet layer object.
+ * @returns {void}
+ */
 onEachBoundaryFeature = ( feature, layer ) => {
 
     layer.bindTooltip( feature.properties.value, { direction: 'right', offset: [ 0, -5 ], sticky: true } );
 }
+/**
+ * Leaflet style function for boundary layers.
+ * @param {Object} f - GeoJSON feature object.
+ * @param {Object} l - Leaflet layer object.
+ * @returns {{ weight: number, color: string }} Leaflet path style options.
+ */
 styleBoundaries = ( f, l ) => {
 
     return { weight: 2, color: '#808080' };
 }
 
+/**
+ * Leaflet style function for isoband layers.
+ * Derives `fillOpacity` from the left boundary of the isoband value range
+ * (e.g., `"10-20"` → `0.1`).
+ * @param {Object} f - GeoJSON feature with `properties.value` as a dash-separated range string (e.g. `"10-20"`).
+ * @param {Object} l - Leaflet layer object.
+ * @returns {Object} Leaflet path style options including `fill`, `fill-opacity`, and computed `fillOpacity`.
+ */
 styleISObands = ( f, l ) => {
 
     let style = f.properties;
