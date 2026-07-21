@@ -179,6 +179,14 @@ getKEGeoJSON = async ( callback ) => {
 	if ( callback ) callback( result )
 	else return result;
 }
+getKZGeoJSON = async ( callback ) => {
+
+    var url = 'kz.json'; //'kenya.geojson';
+	var result = await asyncGetData( url );
+
+	if ( callback ) callback( result )
+	else return result;
+}
 /**
  * Fetches Kenya GeoJSON from `kenya.geojson`.
  * @async
@@ -384,6 +392,13 @@ onEachBoundaryFeature = ( feature, layer ) => {
     }
     else layer.bindTooltip( feature.properties.value, { direction: 'right', offset: [ 0, -5 ], sticky: true } );
 }
+
+onEachGridFeature = ( feature, layer ) => {
+
+    layer.bindTooltip( feature.properties.value, { direction: 'right', offset: [ 0, -5 ], sticky: true } );
+
+}
+
 /**
  * Leaflet style function for boundary layers.
  * @param {Object} f - GeoJSON feature object.
