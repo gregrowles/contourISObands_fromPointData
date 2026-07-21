@@ -64,10 +64,10 @@
 
 <script>
     /* ─── Config ────────────────────────────────────────────────── */
-    const SHADOW_ISOCONTOURS       = false;
+    const SHADOW_ISOCONTOURS       = true;
     const SHOW_POINTS              = true;
     const SMOOTH_ITERATIONS        = 1;      // 0 = off
-    const VISUAL_STYLE             = 'heat'; // 'default' | 'heat' | 'snow' | 'blueGreen' | 'blueRed'
+    const VISUAL_STYLE             = 'blueRed'; // 'default' | 'heat' | 'snow' | 'blueGreen' | 'blueRed'
     const INTERPOLATION_UNITS      = 'kilometers';
     const INTERPOLATION_CELL_SIZE  = 1;   // kilometers/degrees
     const INTERPOLATION_WEIGHT     = 4;  // 1-10, higher = more influence from nearby points (distance-decay weighting)
@@ -76,16 +76,16 @@
     /* ─── Visual theme palettes ──────────────────────────────────── */
     const PALETTES = {
         default: [
-            { fill: '#e3e3ff', fillColor: '#e3e3ff', fillOpacity: 0.65 },
-            { fill: '#c6c6ff', fillColor: '#c6c6ff', fillOpacity: 0.70 },
-            { fill: '#a9aaff', fillColor: '#a9aaff', fillOpacity: 0.75 },
-            { fill: '#8e8eff', fillColor: '#8e8eff', fillOpacity: 0.80 },
-            { fill: '#7171ff', fillColor: '#7171ff', fillOpacity: 0.85 },
-            { fill: '#5554ff', fillColor: '#5554ff', fillOpacity: 0.90 },
-            { fill: '#5554ff', fillColor: '#5554ff', fillOpacity: 0.95 },
-            { fill: '#3939ff', fillColor: '#3939ff', fillOpacity: 0.95 },
-            { fill: '#1b1cff', fillColor: '#1b1cff', fillOpacity: 0.90 },
-            { fill: '#1b1cff', fillColor: '#1b1cff', fillOpacity: 0.95 },
+            { fill: '#e3e3ff', fillColor: '#e3e3ff', fillOpacity: 1.00 },
+            { fill: '#c6c6ff', fillColor: '#c6c6ff', fillOpacity: 1.00 },
+            { fill: '#a9aaff', fillColor: '#a9aaff', fillOpacity: 1.00 },
+            { fill: '#8e8eff', fillColor: '#8e8eff', fillOpacity: 1.00 },
+            { fill: '#7171ff', fillColor: '#7171ff', fillOpacity: 1.00 },
+            { fill: '#5554ff', fillColor: '#5554ff', fillOpacity: 1.00 },
+            { fill: '#5554ff', fillColor: '#5554ff', fillOpacity: 1.00 },
+            { fill: '#3939ff', fillColor: '#3939ff', fillOpacity: 1.00 },
+            { fill: '#1b1cff', fillColor: '#1b1cff', fillOpacity: 1.00 },
+            { fill: '#1b1cff', fillColor: '#1b1cff', fillOpacity: 1.00 },
             { fill: '#1b1cff', fillColor: '#1b1cff', fillOpacity: 1.00 },
         ],
         snow: [
@@ -100,6 +100,19 @@
             { fillColor: '#fff', fillOpacity: 0.96 },
             { fillColor: '#fff', fillOpacity: 0.98 },
             { fillColor: '#fff', fillOpacity: 1.00 },
+        ],
+        glacier: [ //#EDF2F7,#DDE7F0,#CEDDE9,#BFD2E2,#B0C8DB,#A1BED4,#91B5D0,#81ADCC,#72A4C8,#629CC4,#5394C1
+            { fillColor: '#EDF2F7', fillOpacity: 1.00 },
+            { fillColor: '#DDE7F0', fillOpacity: 1.00 },
+            { fillColor: '#CEDDE9', fillOpacity: 1.00 },
+            { fillColor: '#BFD2E2', fillOpacity: 1.00 },
+            { fillColor: '#B0C8DB', fillOpacity: 1.00 },
+            { fillColor: '#A1BED4', fillOpacity: 1.00 },
+            { fillColor: '#91B5D0', fillOpacity: 1.00 },
+            { fillColor: '#81ADCC', fillOpacity: 1.00 },
+            { fillColor: '#72A4C8', fillOpacity: 1.00 },
+            { fillColor: '#629CC4', fillOpacity: 1.00 },
+            { fillColor: '#5394C1', fillOpacity: 1.00 },
         ],
         heat: [ //#3CFF00,#80FF23,#B7FF46,#D4FF23,#FFFF00,#FFBF00,#FF7F00,#FF3F00,#FF0000,#BA0022,#750044
             { fillColor: '#3CFF00', fillOpacity: 1 },
@@ -129,16 +142,29 @@
         ],
         blueRed: [ //#0094F0,#32A7EA,#65BBE5,#98CEDF,#CBE2DA,#FEF6D5,#F3C4AE,#E89387,#DD6261,#D2313A,#C70014
             { fillColor: '#0094F0', fillOpacity: 1 },
-            { fillColor: '#32A7EA', fillOpacity: 0.9 },
-            { fillColor: '#65BBE5', fillOpacity: 0.8 },
-            { fillColor: '#98CEDF', fillOpacity: 0.7 },
-            { fillColor: '#CBE2DA', fillOpacity: 0.6 },
-            { fillColor: '#FEF6D5', fillOpacity: 0.5 },
-            { fillColor: '#F3C4AE', fillOpacity: 0.6 },
-            { fillColor: '#E89387', fillOpacity: 0.7 },
-            { fillColor: '#DD6261', fillOpacity: 0.8 },
-            { fillColor: '#D2313A', fillOpacity: 0.9 },
+            { fillColor: '#32A7EA', fillOpacity: 0.95 },
+            { fillColor: '#65BBE5', fillOpacity: 0.9 },
+            { fillColor: '#98CEDF', fillOpacity: 0.85 },
+            { fillColor: '#CBE2DA', fillOpacity: 0.8 },
+            { fillColor: '#FEF6D5', fillOpacity: 0.75 },
+            { fillColor: '#F3C4AE', fillOpacity: 0.8 },
+            { fillColor: '#E89387', fillOpacity: 0.85 },
+            { fillColor: '#DD6261', fillOpacity: 0.9 },
+            { fillColor: '#D2313A', fillOpacity: 0.95 },
             { fillColor: '#C70014', fillOpacity: 1 },
+        ],
+        greenBlue: [ //#34E933,#33E041,#32D74F,#32CE5D,#31C56A,#31BC79,#30B387,#2FAA94,#2FA1A2,#2E98B0,#2E8FBF
+            { fillColor: '#34E933', fillOpacity: 1 },
+            { fillColor: '#33E041', fillOpacity: 1 },
+            { fillColor: '#32D74F', fillOpacity: 1 },
+            { fillColor: '#32CE5D', fillOpacity: 1 },
+            { fillColor: '#31C56A', fillOpacity: 1 },
+            { fillColor: '#31BC79', fillOpacity: 1 },
+            { fillColor: '#30B387', fillOpacity: 1 },
+            { fillColor: '#2FAA94', fillOpacity: 1 },
+            { fillColor: '#2FA1A2', fillOpacity: 1 },
+            { fillColor: '#2E98B0', fillOpacity: 1 },
+            { fillColor: '#2E8FBF', fillOpacity: 1 }
         ]
     };
 
@@ -235,7 +261,7 @@
             if ( !row?.data?.historicReferrals ) return acc;
 
             const rawVal = row?.data?.historicReferrals?.sum || 0;
-            const val    = parseFloat( Math.random( row.id ) * 1000 ).toFixed(0); // randomised for demo visualisation
+            const val    = parseFloat( parseFloat( Math.random( row.id ) * 1000 ).toFixed(0) ); // randomised for demo visualisation
             const coords = [ row.viewMode.geometry.coordinates[ 1 ], row.viewMode.geometry.coordinates[ 0 ] ];
 
             acc.push( turf.point( coords, {
@@ -248,7 +274,8 @@
 
         const sortedVals = refPoints.map( r => parseFloat( r.val ) ).sort( (a, b) => a - b );
         const paletteClassRanges = createClassRanges( Math.floor(sortedVals[0]), Math.ceil( sortedVals[sortedVals.length - 1] ), rangePaletteGroups.length );
-        console.log( 'paletteClassRanges', paletteClassRanges );
+        // console.log( 'paletteClassRanges', paletteClassRanges );
+        // console.log( 'pointArr', pointArr );
 
         /* Interpolation */
         const grid = turf.interpolate(
@@ -260,9 +287,9 @@
 
         /* Isobands */
         const PALETTE_ISO_BREAKS = [...paletteClassRanges.map( row => row.min ), Math.ceil( sortedVals[sortedVals.length - 1] )];
-        console.log( 'PALETTE_ISO_BREAKS', PALETTE_ISO_BREAKS );
+        // console.log( 'PALETTE_ISO_BREAKS', PALETTE_ISO_BREAKS );
         rangeLookup = buildRangeLookup( PALETTE_ISO_BREAKS, PALETTES );
-        console.log( 'rangeLookup', rangeLookup );
+        // console.log( 'rangeLookup', rangeLookup );
 
         const isobandFC  = turf.flatten( turf.isobands( grid, PALETTE_ISO_BREAKS, {
             zProperty: 'value',
@@ -277,7 +304,7 @@
         if ( SMOOTH_ITERATIONS ) clipped = smoothFeatures( clipped, SMOOTH_ITERATIONS );
 
         const intersections = turf.featureCollection( clipped );
-        console.log( 'intersections', intersections );
+        // console.log( 'intersections', intersections );
 
         /* ─── Leaflet map ──────────────────────────────────────────── */
         const leafmap = L.map( 'leafMap', {
