@@ -1,0 +1,4050 @@
+[
+    {
+        "ou": "kz Ekuhlehleni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.44789516842541,
+                -28.145810368977696
+            ]
+        }
+    },
+    {
+        "ou": "kz Ekuhlehleni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.06294222282432,
+                -27.924279993109103
+            ]
+        }
+    },
+    {
+        "ou": "kz Shemula Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.24425155441404,
+                -27.93465975941264
+            ]
+        }
+    },
+    {
+        "ou": "kz Shemula Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.33441580897521,
+                -28.272117720316018
+            ]
+        }
+    },
+    {
+        "ou": "kz Ekuhlehleni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.47075519499646,
+                -28.366131375717238
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpukunyoni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.85442799094254,
+                -27.02557169042162
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.73172419793568,
+                -27.044284770405575
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.347765647004884,
+                -27.84352382347316
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.10764289982976,
+                -28.102027858762668
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.04472638941586,
+                -26.88460487616882
+            ]
+        }
+    },
+    {
+        "ou": "kz Makhowe Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.170842597023,
+                -28.396879698207336
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.75291282222256,
+                -27.31377354518504
+            ]
+        }
+    },
+    {
+        "ou": "kz Ladysmith Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.544386046691667,
+                -28.306263401546772
+            ]
+        }
+    },
+    {
+        "ou": "kz Steadville Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.422172179928467,
+                -29.18044229057122
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.89545125604405,
+                -28.136741427030653
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpukunyoni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.44907745100228,
+                -28.00989994424108
+            ]
+        }
+    },
+    {
+        "ou": "kz Sipho Zungu Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.20702601017156,
+                -27.5025124337264
+            ]
+        }
+    },
+    {
+        "ou": "kz Sipho Zungu Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.327909525892544,
+                -28.366218538995856
+            ]
+        }
+    },
+    {
+        "ou": "kz Makhowe Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.34158358609695,
+                -27.50038832444629
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.63873733616791,
+                -27.140442807328316
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.32068126547309,
+                -27.270073408147365
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.03929072750908,
+                -27.035427708016517
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.426984428235656,
+                -26.918271557839393
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.19958219598066,
+                -27.36365712720327
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.33695295093281,
+                -26.878974865954664
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.56274055678797,
+                -27.379406745952092
+            ]
+        }
+    },
+    {
+        "ou": "kz Christ the King Hospital",
+        "agent": "UNEXPECTED_CLUSTER_DEATHS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.616558539316223,
+                -29.989776351972367
+            ]
+        }
+    },
+    {
+        "ou": "kz Osizweni 1 Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_LIVESTOCK",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.83088131921211,
+                -27.531552374966488
+            ]
+        }
+    },
+    {
+        "ou": "kz Nokweja Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.174354368524853,
+                -30.240098814595626
+            ]
+        }
+    },
+    {
+        "ou": "kz Nokweja Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.997677453916218,
+                -30.40603564375327
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndumo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.05265421024549,
+                -27.779147717921184
+            ]
+        }
+    },
+    {
+        "ou": "kz Shemula Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.578751605594924,
+                -27.98359033003002
+            ]
+        }
+    },
+    {
+        "ou": "kz Inhlwathi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.559691607038786,
+                -28.11346782675395
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.20829953168105,
+                -28.181210482718708
+            ]
+        }
+    },
+    {
+        "ou": "kz Friesgewacht Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.850175794311028,
+                -27.88324948517169
+            ]
+        }
+    },
+    {
+        "ou": "kz St Apollinaris Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.181497445037696,
+                -29.750092201866337
+            ]
+        }
+    },
+    {
+        "ou": "kz Bergville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.469453323560224,
+                -29.086064803181856
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.770531185813155,
+                -29.14082913049865
+            ]
+        }
+    },
+    {
+        "ou": "kz Ladysmith Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.980604572178958,
+                -28.53463973410539
+            ]
+        }
+    },
+    {
+        "ou": "kz Walton Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.804428004803786,
+                -28.611977213766405
+            ]
+        }
+    },
+    {
+        "ou": "kz Tobolsk Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.72121325045789,
+                -27.954324630527818
+            ]
+        }
+    },
+    {
+        "ou": "kz eDumbe CHC",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.587923007126776,
+                -28.153323327373553
+            ]
+        }
+    },
+    {
+        "ou": "kz eDumbe CHC",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.965847126860087,
+                -27.526571720952045
+            ]
+        }
+    },
+    {
+        "ou": "kz Nseleni CHC",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.608650650244307,
+                -28.92321349832398
+            ]
+        }
+    },
+    {
+        "ou": "kz Thokozani Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.932042579247774,
+                -28.518150618182954
+            ]
+        }
+    },
+    {
+        "ou": "kz Steadville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.686952632411074,
+                -28.210255045837197
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.682769241214935,
+                -27.424499900731163
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.1524907979093,
+                -27.98613362763047
+            ]
+        }
+    },
+    {
+        "ou": "kz Nkundusi Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.87941427694359,
+                -26.918131874777686
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndwedwe CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.213554413919635,
+                -29.365387466725878
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndwedwe CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.31697112911676,
+                -29.254527855715178
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndwedwe CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.375229480545027,
+                -29.1152149002749
+            ]
+        }
+    },
+    {
+        "ou": "kz Christ the King Hospital",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.40049151123022,
+                -29.72215151167313
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndwedwe CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.093608455225606,
+                -29.114657908552328
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndwedwe CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.448586970861314,
+                -29.117487025602777
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndwedwe CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.24102328149367,
+                -29.28513384658209
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndwedwe CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.877977792849556,
+                -29.596097820424344
+            ]
+        }
+    },
+    {
+        "ou": "kz Forderville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.963133673499453,
+                -29.035782866203046
+            ]
+        }
+    },
+    {
+        "ou": "kz Forderville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.9963427460003,
+                -28.72840523842264
+            ]
+        }
+    },
+    {
+        "ou": "kz Wembezi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.86201858415226,
+                -28.858336648976803
+            ]
+        }
+    },
+    {
+        "ou": "kz Wembezi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.53447428378849,
+                -29.018289694438288
+            ]
+        }
+    },
+    {
+        "ou": "kz Wembezi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.524737902278662,
+                -29.15008521514342
+            ]
+        }
+    },
+    {
+        "ou": "kz Wembezi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.260189836936394,
+                -28.4929549512243
+            ]
+        }
+    },
+    {
+        "ou": "kz Wembezi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.109903889850383,
+                -28.667066240115503
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.121710204617912,
+                -29.38029501193315
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.923467189011795,
+                -29.434960277284517
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.535034599708126,
+                -29.097572383915388
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.195689874738015,
+                -29.239923059470296
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.335476781403703,
+                -29.180640113038606
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.00280435089113,
+                -29.303086391765
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.255665574875454,
+                -29.179151942961354
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.03158276493647,
+                -29.222413867837425
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.87391538423205,
+                -29.481372953227318
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.44775078400134,
+                -29.025086797724423
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.298474650736683,
+                -29.35210545593174
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.39360004082995,
+                -29.202605728449644
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.141395624497346,
+                -29.30094626252232
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.18388074708025,
+                -29.528017398813518
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.090025666666666,
+                -29.450413666666666
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.07658312687236,
+                -29.29830039810377
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.0703276715532,
+                -29.51452324774134
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.74558265254204,
+                -29.491028664740902
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.392120122807665,
+                -29.07262845683238
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.395189913867956,
+                -29.013105469576164
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaDukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.59915641862851,
+                -29.09410603276018
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.975662090879695,
+                -29.37122556654135
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.995081958629612,
+                -28.93843422492617
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.732115903512504,
+                -29.542407229872076
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.22059704836919,
+                -29.421817559107
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.296070269914555,
+                -29.419872823545596
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.996942354954154,
+                -29.550836119277214
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.921197094185707,
+                -29.314783854679977
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.074034054771673,
+                -29.02653470018103
+            ]
+        }
+    },
+    {
+        "ou": "kz Vryheid Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.91649350982459,
+                -27.824278132341956
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.92355710508673,
+                -29.53750517445407
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.155135,
+                -29.460206
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.78358904858579,
+                -29.538708305414527
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.96324705017892,
+                -29.14648139018469
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.390856222992376,
+                -28.879807195561714
+            ]
+        }
+    },
+    {
+        "ou": "kz East Griqualand and Usher Memorial Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.151432192253456,
+                -30.15601520137984
+            ]
+        }
+    },
+    {
+        "ou": "kz Steadville Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.13597624290538,
+                -28.89586402665514
+            ]
+        }
+    },
+    {
+        "ou": "kz Ekuhlehleni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.48444758421261,
+                -27.459496875183152
+            ]
+        }
+    },
+    {
+        "ou": "kz Ekuhlehleni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.665596851896844,
+                -27.558410282360164
+            ]
+        }
+    },
+    {
+        "ou": "kz Ekuhlehleni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.03395201591279,
+                -27.672932364706018
+            ]
+        }
+    },
+    {
+        "ou": "kz Manguzi Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.33160496011749,
+                -28.0195355738293
+            ]
+        }
+    },
+    {
+        "ou": "kz Manguzi Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.4144034438257,
+                -28.439595877508378
+            ]
+        }
+    },
+    {
+        "ou": "kz Manguzi Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.332268934651225,
+                -27.002610033751846
+            ]
+        }
+    },
+    {
+        "ou": "kz Madonela Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.2180667425714,
+                -27.245712170026398
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.5260619458047,
+                -26.90925073941249
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.45117844010973,
+                -27.038023491168648
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.920388932456312,
+                -28.30676218123498
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.825252139553385,
+                -27.15234027553886
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.53612525578929,
+                -28.232647511396205
+            ]
+        }
+    },
+    {
+        "ou": "kz Steadville Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.60796307564257,
+                -29.093559912101036
+            ]
+        }
+    },
+    {
+        "ou": "kz St Margaret's CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.688439066102323,
+                -30.07462790211205
+            ]
+        }
+    },
+    {
+        "ou": "kz Ncibidwane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.785231641062122,
+                -28.726471211717023
+            ]
+        }
+    },
+    {
+        "ou": "kz Wembezi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.16473287495913,
+                -28.57777261310162
+            ]
+        }
+    },
+    {
+        "ou": "kz Ncibidwane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.498450104208697,
+                -28.89080203810567
+            ]
+        }
+    },
+    {
+        "ou": "kz Estcourt Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.362036037756624,
+                -28.601241427135232
+            ]
+        }
+    },
+    {
+        "ou": "kz Forderville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.291026091022534,
+                -29.029712658678147
+            ]
+        }
+    },
+    {
+        "ou": "kz Connor Street Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.09406498234592,
+                -28.64172350264955
+            ]
+        }
+    },
+    {
+        "ou": "kz Ntabamhlope Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.882622805254567,
+                -28.57668777871877
+            ]
+        }
+    },
+    {
+        "ou": "kz Injisuthi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.021109022502877,
+                -28.84736595856684
+            ]
+        }
+    },
+    {
+        "ou": "kz Wembezi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.089906741573046,
+                -28.504908569589208
+            ]
+        }
+    },
+    {
+        "ou": "kz Madiba Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.557963716996724,
+                -28.779663265450235
+            ]
+        }
+    },
+    {
+        "ou": "kz Ntabamhlope Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.3566618460187,
+                -28.722483738579637
+            ]
+        }
+    },
+    {
+        "ou": "kz Ncibidwane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.01265864574535,
+                -28.611374158637947
+            ]
+        }
+    },
+    {
+        "ou": "kz Ntabamhlope Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.753148,
+                -28.534467333333332
+            ]
+        }
+    },
+    {
+        "ou": "kz Estcourt Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.739488179807648,
+                -28.623758575910394
+            ]
+        }
+    },
+    {
+        "ou": "kz Dukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.786421544469675,
+                -29.04473839264149
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.171545427557355,
+                -28.593226343385954
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.232985227643432,
+                -28.669899056017123
+            ]
+        }
+    },
+    {
+        "ou": "kz Ixopo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.176391178400554,
+                -30.21967696799113
+            ]
+        }
+    },
+    {
+        "ou": "kz Ixopo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.511038027068665,
+                -29.69472016504948
+            ]
+        }
+    },
+    {
+        "ou": "kz Ixopo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.984707020123945,
+                -29.886463986583646
+            ]
+        }
+    },
+    {
+        "ou": "kz Ixopo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.894208932773623,
+                -30.49173908929949
+            ]
+        }
+    },
+    {
+        "ou": "kz Ixopo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.78031130270519,
+                -30.411872886901282
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.203291781934766,
+                -28.99655795913376
+            ]
+        }
+    },
+    {
+        "ou": "kz Oliviershoek Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.470479426118867,
+                -29.275799039363577
+            ]
+        }
+    },
+    {
+        "ou": "kz Dukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.79667429889528,
+                -28.477921256998435
+            ]
+        }
+    },
+    {
+        "ou": "kz Oliviershoek Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.68713150077011,
+                -29.134338680777372
+            ]
+        }
+    },
+    {
+        "ou": "kz Amazizi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.28946219028734,
+                -28.88836272946371
+            ]
+        }
+    },
+    {
+        "ou": "kz Oliviershoek Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.787553,
+                -28.813689
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.793688159267045,
+                -28.303051254906954
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.913898306183285,
+                -28.23336616778079
+            ]
+        }
+    },
+    {
+        "ou": "kz Bergville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.714247564958896,
+                -28.842801453816186
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                28.943740668547775,
+                -28.714973868451146
+            ]
+        }
+    },
+    {
+        "ou": "kz Busingatha Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.854062037591827,
+                -28.35614690718276
+            ]
+        }
+    },
+    {
+        "ou": "kz Amazizi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.279797445487016,
+                -28.538057590040967
+            ]
+        }
+    },
+    {
+        "ou": "kz Amazizi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.16326756564239,
+                -28.70966154759173
+            ]
+        }
+    },
+    {
+        "ou": "kz Amazizi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.02672536124315,
+                -28.86153618926752
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.24442806742204,
+                -28.87652216583869
+            ]
+        }
+    },
+    {
+        "ou": "kz Oliviershoek Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.603795693620658,
+                -28.519836830104566
+            ]
+        }
+    },
+    {
+        "ou": "kz Busingatha Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.90145460623187,
+                -28.76192412157357
+            ]
+        }
+    },
+    {
+        "ou": "kz Busingatha Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.670898779717252,
+                -29.21295888571759
+            ]
+        }
+    },
+    {
+        "ou": "kz Dukuza Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.863352456956047,
+                -29.12846127180624
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.632872326735285,
+                -28.642672252691415
+            ]
+        }
+    },
+    {
+        "ou": "kz Oliviershoek Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.67301512827059,
+                -29.04997510338598
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.04019337074172,
+                -28.394433195538124
+            ]
+        }
+    },
+    {
+        "ou": "kz Bergville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.71993881933167,
+                -29.252506070179475
+            ]
+        }
+    },
+    {
+        "ou": "kz Bergville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.6784299022481,
+                -28.53519613704234
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.231029752883792,
+                -28.78135545336138
+            ]
+        }
+    },
+    {
+        "ou": "kz Steadville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.68383380277383,
+                -28.69865848528909
+            ]
+        }
+    },
+    {
+        "ou": "kz Watersmeet Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.740391666666667,
+                -28.917194
+            ]
+        }
+    },
+    {
+        "ou": "kz Watersmeet Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.316257698700845,
+                -28.459772659848966
+            ]
+        }
+    },
+    {
+        "ou": "kz Steadville Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.013560803661225,
+                -28.77064652401835
+            ]
+        }
+    },
+    {
+        "ou": "kz Ladysmith Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.547979392187585,
+                -28.679560271263867
+            ]
+        }
+    },
+    {
+        "ou": "kz Ladysmith Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.933175382946985,
+                -28.907759391815205
+            ]
+        }
+    },
+    {
+        "ou": "kz Jozini Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_CATS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.55160198139193,
+                -27.562127566742888
+            ]
+        }
+    },
+    {
+        "ou": "kz Mseleni Gateway Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.21735377351544,
+                -27.74715457303493
+            ]
+        }
+    },
+    {
+        "ou": "kz Mhlekazi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.141410751999715,
+                -26.89783165985377
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.2396564926009,
+                -27.840622816851198
+            ]
+        }
+    },
+    {
+        "ou": "kz Shemula Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.436419580017834,
+                -27.555380962136024
+            ]
+        }
+    },
+    {
+        "ou": "kz NHN Lenmed Health La Verna Hospital",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.552027071266807,
+                -28.59253015961937
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.103050043362543,
+                -29.99468943354079
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.22020072537417,
+                -30.536311745599725
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.357476301775904,
+                -29.95146376521155
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.540927730043762,
+                -30.319648247601585
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.533169372300826,
+                -30.56936192019437
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.24163491220862,
+                -30.367758048080145
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.17271365284446,
+                -29.85556833024031
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.764470871675023,
+                -29.966109231917436
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.26706936108813,
+                -30.013816947863393
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.513830414343307,
+                -29.92857710743997
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.62135278263788,
+                -29.69169443208248
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.27296878540929,
+                -30.059128614952204
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.760430458114033,
+                -29.742706790976037
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.855759323003262,
+                -29.83594739727395
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.14322631032196,
+                -30.35289350723056
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.16740340540169,
+                -30.053173840554233
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.453237301802208,
+                -30.173936955956002
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.02924365959731,
+                -30.259853441490705
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.361438197162126,
+                -30.57720529352444
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.644658391367148,
+                -30.345700842761957
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "UNUSUAL_DRUG_CONSUMPTION",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.391659885745664,
+                -30.153471874106952
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.951637097913103,
+                -30.154957245623706
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMteyi Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.96748602643236,
+                -28.4448698312256
+            ]
+        }
+    },
+    {
+        "ou": "kz Walton Clinic",
+        "agent": "TEEN_PREG",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.25368057746829,
+                -28.684235915165164
+            ]
+        }
+    },
+    {
+        "ou": "kz Ladysmith Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.824529569624364,
+                -28.95788483956947
+            ]
+        }
+    },
+    {
+        "ou": "kz NHN Lenmed Health La Verna Hospital",
+        "agent": "DIED_MOM_NEW",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.453216841939156,
+                -28.77818455643187
+            ]
+        }
+    },
+    {
+        "ou": "kz Forderville Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.801823427742328,
+                -28.417047126425608
+            ]
+        }
+    },
+    {
+        "ou": "kz Ladysmith Hospital",
+        "agent": "DIED_MOM_NEW",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.21822990514629,
+                -28.7797393347199
+            ]
+        }
+    },
+    {
+        "ou": "kz Emmaus Hospital",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.915802471470194,
+                -28.663046833449663
+            ]
+        }
+    },
+    {
+        "ou": "kz Driefontein Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.794600696369905,
+                -28.21352557345608
+            ]
+        }
+    },
+    {
+        "ou": "kz Kleinfontein Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.114542472250896,
+                -28.786182896597523
+            ]
+        }
+    },
+    {
+        "ou": "kz Kleinfontein Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.548370943788004,
+                -29.29571151550738
+            ]
+        }
+    },
+    {
+        "ou": "kz Limit Hill Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.399561106384173,
+                -28.982733017891224
+            ]
+        }
+    },
+    {
+        "ou": "kz Driefontein Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.085224970131335,
+                -28.765963781358593
+            ]
+        }
+    },
+    {
+        "ou": "kz Outer West Mobile 1",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.960612185333634,
+                -28.29260591618629
+            ]
+        }
+    },
+    {
+        "ou": "kz Limit Hill Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.06480158149788,
+                -28.96356876318113
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.533040845054742,
+                -29.816252236956746
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.31721961920975,
+                -30.288735653880266
+            ]
+        }
+    },
+    {
+        "ou": "kz Underberg Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.457109142266248,
+                -30.00646495800623
+            ]
+        }
+    },
+    {
+        "ou": "kz Eshowe Hospital",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.829517403767042,
+                -28.831051872248047
+            ]
+        }
+    },
+    {
+        "ou": "kz Connor Street Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.448653634572118,
+                -28.54962805835159
+            ]
+        }
+    },
+    {
+        "ou": "kz Walton Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.372860027000797,
+                -29.08598069359465
+            ]
+        }
+    },
+    {
+        "ou": "kz Essen Medical Centre",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.60204617681953,
+                -28.95125236426688
+            ]
+        }
+    },
+    {
+        "ou": "kz Essen Medical Centre",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.016729564383464,
+                -28.61758678328662
+            ]
+        }
+    },
+    {
+        "ou": "kz Walton Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.192578454585863,
+                -28.94182976041681
+            ]
+        }
+    },
+    {
+        "ou": "kz Tholusizo Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.687187046496078,
+                -28.33166611657654
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlokozi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.30758488464664,
+                -30.261817689150472
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMame Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.316407808900006,
+                -27.76934579572613
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMame Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.851455463251963,
+                -27.505972859395154
+            ]
+        }
+    },
+    {
+        "ou": "kz Steadville Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.449206610806716,
+                -28.67073125858731
+            ]
+        }
+    },
+    {
+        "ou": "kz Walton Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.516799533422045,
+                -28.464771556301567
+            ]
+        }
+    },
+    {
+        "ou": "kz Sokhela Clinic",
+        "agent": "UNUSUAL_DISEASE_PATTERNS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.86403082062024,
+                -30.196446392224875
+            ]
+        }
+    },
+    {
+        "ou": "kz Umzimkhulu Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.496138463792736,
+                -29.608925738225537
+            ]
+        }
+    },
+    {
+        "ou": "kz Mvoti Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.58048997623707,
+                -30.148655815757316
+            ]
+        }
+    },
+    {
+        "ou": "kz Ladysmith Hospital",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.12808476048052,
+                -28.857930306638163
+            ]
+        }
+    },
+    {
+        "ou": "kz Tholusizo Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.672415559031975,
+                -28.773949056284152
+            ]
+        }
+    },
+    {
+        "ou": "kz Sigweje Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.181116700262564,
+                -28.46701561884807
+            ]
+        }
+    },
+    {
+        "ou": "kz Mashona Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.528271287012796,
+                -27.425740231572515
+            ]
+        }
+    },
+    {
+        "ou": "kz Wembezi Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.58280838824049,
+                -29.216020834920517
+            ]
+        }
+    },
+    {
+        "ou": "kz St Chads CHC",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.610600340670686,
+                -28.40295709133329
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMame Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.20543785384521,
+                -27.99182576732638
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMame Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.59932428292374,
+                -27.748843860165344
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMame Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.28327289479459,
+                -28.34217436314135
+            ]
+        }
+    },
+    {
+        "ou": "kz Mashona Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.034621069679947,
+                -28.20657669364045
+            ]
+        }
+    },
+    {
+        "ou": "kz Mashona Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.239963033430477,
+                -27.460850975375525
+            ]
+        }
+    },
+    {
+        "ou": "kz Mashona Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.682046750273607,
+                -27.470760443723236
+            ]
+        }
+    },
+    {
+        "ou": "kz Ladysmith Hospital",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.702965376179165,
+                -28.98466092728127
+            ]
+        }
+    },
+    {
+        "ou": "kz Jozini Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.2046437806012,
+                -27.63673880386876
+            ]
+        }
+    },
+    {
+        "ou": "kz Greenock Clinic",
+        "agent": "UNEXPECTED_CLUSTER_DEATHS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.237197650078457,
+                -27.490210388547812
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.460479,
+                -30.273946333333335
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_CATS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.164242255148896,
+                -30.071980838418447
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.32857635991016,
+                -29.557010553489565
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.395386082692774,
+                -30.081261389441288
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.960290182666537,
+                -30.019672641632507
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.667148422189843,
+                -30.475107093247207
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.668208809012487,
+                -29.85029864370559
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.37013384107147,
+                -29.631760012501584
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.54038200084015,
+                -27.68068758771711
+            ]
+        }
+    },
+    {
+        "ou": "kz Mkuze Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.449471796488396,
+                -27.890154008364547
+            ]
+        }
+    },
+    {
+        "ou": "kz Mkuze Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.77745495582277,
+                -28.326827674795382
+            ]
+        }
+    },
+    {
+        "ou": "kz Mbazwana Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.20890534831699,
+                -27.047933820072448
+            ]
+        }
+    },
+    {
+        "ou": "kz Mbazwana Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.02337868499467,
+                -27.329108723734173
+            ]
+        }
+    },
+    {
+        "ou": "kz Magabheni Clinic",
+        "agent": "",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.04799218783283,
+                -29.72196295988134
+            ]
+        }
+    },
+    {
+        "ou": "kz Magabheni Clinic",
+        "agent": "",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.88779442167864,
+                -29.99760090829139
+            ]
+        }
+    },
+    {
+        "ou": "kz Watersmeet Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.284070245297833,
+                -28.459423708719743
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.054276791992045,
+                -27.17005932639448
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.64632862173972,
+                -27.704064253040112
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.31404415357399,
+                -27.39517024992193
+            ]
+        }
+    },
+    {
+        "ou": "kz Gunjaneni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.60004342032278,
+                -27.849365667805333
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.24220668764197,
+                -26.906507630013024
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.13125766666666,
+                -27.010894
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.447505352614975,
+                -28.26815841354437
+            ]
+        }
+    },
+    {
+        "ou": "kz Sipho Zungu Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.115856382803784,
+                -27.351286420702134
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.476912084240766,
+                -27.23236156662516
+            ]
+        }
+    },
+    {
+        "ou": "kz Madadeni 7 Clinic",
+        "agent": "NON_COMPLIANT_WATER_QUALITY",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.947344780655396,
+                -27.43392997454622
+            ]
+        }
+    },
+    {
+        "ou": "kz Manguzi Hospital",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.102816264490166,
+                -27.59223036558626
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.295398396678856,
+                -28.46393125532151
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "NON_COMPLIANT_WATER_QUALITY",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.49551055849167,
+                -27.780909808360345
+            ]
+        }
+    },
+    {
+        "ou": "kz Manguzi Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.75751969179166,
+                -26.92088007175249
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMsane Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.36545489144219,
+                -27.16260616023413
+            ]
+        }
+    },
+    {
+        "ou": "kz Hlabisa Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.22716389083245,
+                -28.29848474336659
+            ]
+        }
+    },
+    {
+        "ou": "kz Ophansi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.30210690740421,
+                -27.61142979357289
+            ]
+        }
+    },
+    {
+        "ou": "kz Ophansi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.60164560723736,
+                -27.27061563263634
+            ]
+        }
+    },
+    {
+        "ou": "kz Ekuhlehleni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.342803795272864,
+                -28.157974991399325
+            ]
+        }
+    },
+    {
+        "ou": "kz Ekuhlehleni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.43713978134689,
+                -27.333095938500417
+            ]
+        }
+    },
+    {
+        "ou": "kz Ezimpondweni Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.501864841584066,
+                -27.13269655542933
+            ]
+        }
+    },
+    {
+        "ou": "kz Magabheni Clinic",
+        "agent": "",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.761952426675347,
+                -29.832549553978446
+            ]
+        }
+    },
+    {
+        "ou": "kz Magabheni Clinic",
+        "agent": "",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.652921867543544,
+                -29.71388127368005
+            ]
+        }
+    },
+    {
+        "ou": "kz Magabheni Clinic",
+        "agent": "",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.68084845116735,
+                -30.09005303008545
+            ]
+        }
+    },
+    {
+        "ou": "kz Sandanezwe Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.38575345943863,
+                -29.841415006700107
+            ]
+        }
+    },
+    {
+        "ou": "kz Sigweje Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.228035666666667,
+                -28.92092
+            ]
+        }
+    },
+    {
+        "ou": "kz Gwala Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.77224714162962,
+                -30.133212603251273
+            ]
+        }
+    },
+    {
+        "ou": "kz Acaciavale Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.430786240796188,
+                -28.415655561683106
+            ]
+        }
+    },
+    {
+        "ou": "kz Sigweje Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.12368742496851,
+                -28.39913553161649
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.08578632968713,
+                -27.46763647218107
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.349684188000246,
+                -27.7358083919013
+            ]
+        }
+    },
+    {
+        "ou": "kz Othobothini CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.99914639315036,
+                -28.03024933729966
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.664932617372106,
+                -30.227040071345677
+            ]
+        }
+    },
+    {
+        "ou": "kz St Apollinaris Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.291101106925485,
+                -30.105273697459143
+            ]
+        }
+    },
+    {
+        "ou": "kz St Apollinaris Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.359479465439172,
+                -30.413125818114004
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.33579335809298,
+                -28.531442684086855
+            ]
+        }
+    },
+    {
+        "ou": "kz St Apollinaris Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.892698201053637,
+                -30.31463094443312
+            ]
+        }
+    },
+    {
+        "ou": "kz St Apollinaris Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.294590270079265,
+                -30.15761820093534
+            ]
+        }
+    },
+    {
+        "ou": "kz St Apollinaris Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.76818664549205,
+                -30.289372813864688
+            ]
+        }
+    },
+    {
+        "ou": "kz Kloof Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.911514880048333,
+                -29.660514057245244
+            ]
+        }
+    },
+    {
+        "ou": "kz St Apollinaris Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.352322143033195,
+                -30.164818247405215
+            ]
+        }
+    },
+    {
+        "ou": "kz Forderville Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.320555994263344,
+                -28.80773811091497
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.56776350464718,
+                -28.363181396909425
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.576602535386492,
+                -28.41550018361058
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.441728864734365,
+                -29.252593143337176
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.988963286129966,
+                -29.463350770951415
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.233861702791508,
+                -29.489112347862477
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.40771603184628,
+                -29.307645512574716
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.51659651891229,
+                -28.03168283749144
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.85554377466283,
+                -28.831739740695692
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.20049541066959,
+                -28.124285151748833
+            ]
+        }
+    },
+    {
+        "ou": "kz East Griqualand and Usher Memorial Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.270210369513475,
+                -29.7276607365833
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.95225001005507,
+                -28.991654973404028
+            ]
+        }
+    },
+    {
+        "ou": "kz St Margaret's CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_WILDLIFE",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.26310861984237,
+                -29.893685293326836
+            ]
+        }
+    },
+    {
+        "ou": "kz St Margaret's CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.51745961961686,
+                -30.08055986238646
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.27940412962611,
+                -28.54401438341719
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.44813909641161,
+                -28.319314579649223
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.49663596513752,
+                -28.957835936167143
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.89540901513531,
+                -28.3596536693908
+            ]
+        }
+    },
+    {
+        "ou": "kz Prince Mshiyeni Memorial Hospital",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.98975481057071,
+                -29.876255739310906
+            ]
+        }
+    },
+    {
+        "ou": "kz Prince Mshiyeni Memorial Hospital",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.703883798302556,
+                -29.958050373063173
+            ]
+        }
+    },
+    {
+        "ou": "kz Alliance Care Umhlanga Hospital",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.969484259622728,
+                -29.764306033548625
+            ]
+        }
+    },
+    {
+        "ou": "kz Ahmed Al-Kadi Private Hospital",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.649148176324974,
+                -29.818810066854113
+            ]
+        }
+    },
+    {
+        "ou": "kz Amaotana Mobile 1",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.777811995321144,
+                -30.150987603766158
+            ]
+        }
+    },
+    {
+        "ou": "kz Aliwal Pharmacy",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.12936565750121,
+                -29.567163251628006
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMashu Poly CHC",
+        "agent": "OTHER_SIGNAL",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.81105982859105,
+                -29.73050816016887
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMashu Poly CHC",
+        "agent": "",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.87718653345368,
+                -29.845883459086796
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "POOR_VACC",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.706592231301503,
+                -28.748754911504843
+            ]
+        }
+    },
+    {
+        "ou": "kz Singisi Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.265946679752595,
+                -30.211161169249657
+            ]
+        }
+    },
+    {
+        "ou": "kz Macambini Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.363698527818194,
+                -29.320810521281377
+            ]
+        }
+    },
+    {
+        "ou": "kz Macambini Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.050224392535654,
+                -29.403323425537852
+            ]
+        }
+    },
+    {
+        "ou": "kz Siphimpilo Clinic",
+        "agent": "UNUSUAL_DISEASE_PATTERNS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.341519613651023,
+                -28.08570903841174
+            ]
+        }
+    },
+    {
+        "ou": "kz Christ the King Hospital",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.07183481860377,
+                -29.981201061572804
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.21341197596974,
+                -30.14214362540839
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.507757733590445,
+                -30.440964228927818
+            ]
+        }
+    },
+    {
+        "ou": "kz Jozini Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.63730600680191,
+                -26.921947896168174
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.860625684849524,
+                -30.010369388900834
+            ]
+        }
+    },
+    {
+        "ou": "kz Pholela CHC",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.051970624380115,
+                -30.103058408618768
+            ]
+        }
+    },
+    {
+        "ou": "kz Matiwaneskop Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.939905881018866,
+                -28.368265415523055
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.31105070109742,
+                -28.560523326906303
+            ]
+        }
+    },
+    {
+        "ou": "kz Ntabamhlope Clinic",
+        "agent": "FOOD_POISONING",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.88633605631261,
+                -28.47065818609563
+            ]
+        }
+    },
+    {
+        "ou": "kz Matiwaneskop Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.700760736975962,
+                -28.438553922608094
+            ]
+        }
+    },
+    {
+        "ou": "kz Newcastle PHC Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.818585509672957,
+                -28.019979037710577
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.813521103815127,
+                -29.48562423548952
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.420450600128213,
+                -29.003043631926914
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.142681109169487,
+                -29.188833357637417
+            ]
+        }
+    },
+    {
+        "ou": "kz Forderville Clinic",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.612742804883464,
+                -28.854408306782304
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.989631992020396,
+                -28.79370098589403
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.10101753038948,
+                -28.668543316308565
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.70247135766421,
+                -28.70025045104198
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.22157501394651,
+                -29.005297543944486
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.0727232213899,
+                -28.63497743831349
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.25102996370469,
+                -28.558262505813698
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.873388200857217,
+                -28.570919312662376
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.13986492842183,
+                -28.797451950275274
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.83165019736725,
+                -28.70994446010408
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.3717678652325,
+                -28.87542685041477
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.4850873620796,
+                -28.65520613971553
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                32.02328866331436,
+                -28.483209406943548
+            ]
+        }
+    },
+    {
+        "ou": "kz Ndlangubo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.64428189667263,
+                -28.495124778380244
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.822547805691585,
+                -29.55501233969275
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.50755675563192,
+                -29.186483350958248
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.18720470173039,
+                -29.124896608490452
+            ]
+        }
+    },
+    {
+        "ou": "kz Mpumelelo Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                31.486161419887623,
+                -29.04944941179474
+            ]
+        }
+    },
+    {
+        "ou": "kz Amajuba District EHP",
+        "agent": "CLUSTERED_HUMAN",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.519753455201062,
+                -27.877247984053355
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMbunde Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.523652808335438,
+                -30.347819656344974
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMbunde Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                29.842175564986977,
+                -30.647976538723615
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMbunde Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.21855962064006,
+                -30.57738244857609
+            ]
+        }
+    },
+    {
+        "ou": "kz KwaMbunde Clinic",
+        "agent": "ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.225913821690124,
+                -30.84519823582654
+            ]
+        }
+    }
+]
