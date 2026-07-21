@@ -200,6 +200,15 @@ getKenyaGeoJSON = async ( callback ) => {
  * @param {Function} [callback] - Optional callback receiving the result. If omitted, returns a Promise.
  * @returns {Promise<Array<Object>>|void} Array of point data records.
  */
+getPointDataNew = async ( callback ) => {
+
+    var url = 'kz_events_data.json';
+	var result = await asyncGetData( url );
+
+	if ( callback ) callback( result )
+	else return result;
+}
+
 getPointData = async ( callback ) => {
 
     var url = 'point.data.json';
@@ -267,7 +276,7 @@ turfISObands = () => {
                 gridType: "points",
                 property: "value",
                 units: "degrees",
-                weight: 10
+                weight: 2
             };
         
             // need interpolation grid (square outer region)
@@ -365,7 +374,15 @@ turfISObands = () => {
  */
 onEachBoundaryFeature = ( feature, layer ) => {
 
-    layer.bindTooltip( feature.properties.value, { direction: 'right', offset: [ 0, -5 ], sticky: true } );
+    if ( feature.properties.value.indexOf( '-') ) {
+        var arrVals = feature.properties.value.split( '-' );
+        if ( parseFloat(arrVals[0]).toFixed(0) == parseFloat(arrVals[1]).toFixed(0) ) layer.bindTooltip( feature.properties.value, { direction: 'right', offset: [ 0, -5 ], sticky: true } );
+        else {
+            layer.bindTooltip( parseFloat(arrVals[0]).toFixed(0) + ' - ' + parseFloat(arrVals[1]).toFixed(0) , { direction: 'right', offset: [ 0, -5 ], sticky: true } );
+        }
+        
+    }
+    else layer.bindTooltip( feature.properties.value, { direction: 'right', offset: [ 0, -5 ], sticky: true } );
 }
 /**
  * Leaflet style function for boundary layers.
