@@ -53,7 +53,7 @@
             fill-opacity: 0;
         }
 
-        svg path.points       { display: block; filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.25)); }
+        svg path.points       { display: block; filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.25)); z-index: 9999;}
         svg path.intersections { display: block; }
     </style>
 
@@ -65,15 +65,16 @@
 
 <script>
     /* ─── Config ────────────────────────────────────────────────── */
-    const RUN_CONTOUR_CLIPPING     = false;
-    const SHADOW_ISOCONTOURS       = true;
+    const RUN_CONTOUR_CLIPPING     = true;
+    const SHADOW_ISOCONTOURS       = false;
     const SHOW_POINTS              = true;
-    const SMOOTH_ITERATIONS        = 3;      // 0 = off
-    const VISUAL_STYLE             = 'blueRed'; // 'default' | 'heat' | 'snow' | 'glacier' | 'blueGreen' | 'blueRed' | 'greenBlue'
+    const SHOW_GRID                = false;
+    const SMOOTH_ITERATIONS        = 0;      // 0 = off
+    const COLOR_THEME             = 'blueRed'; // 'default' | 'heat' | 'snow' | 'glacier' | 'blueGreen' | 'blueRed' | 'greenBlue'
     const INTERPOLATION_UNITS      = 'kilometers';
     const INTERPOLATION_UNIT_CELL_SIZE  = 10;   // kilometers/degrees
     const INTERPOLATION_WEIGHT     = 8;  // 1-10, higher = more influence from nearby points (distance-decay weighting)
-    const DATA_FILE_AGENT_FILTER   = 'ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS'; // 'data.json' | 'data.csv'
+    // const DATA_FILE_AGENT_FILTER   = 'ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS'; // 'data.json' | 'data.csv'
 
     /* ─── Visual theme palettes ──────────────────────────────────── */
     const PALETTES = {
@@ -170,7 +171,7 @@
         ]
     };
 
-    const rangePaletteGroups = PALETTES[ VISUAL_STYLE ] || PALETTES.default;
+    const rangePaletteGroups = PALETTES[ COLOR_THEME ] || PALETTES.default;
 
     /* ─── Helper: build isoband range → style lookup ─────────────── */
     const buildRangeLookup = ( breaks, palettes ) => {
@@ -244,14 +245,15 @@
     /* ─── Leaflet style callbacks ─────────────────────────────────── */
     let rangeLookup = {};
 
-    const styleISObands = ( f ) => rangeLookup[ f.properties.value ]?.[ VISUAL_STYLE ] ?? {};
-    const stylePoints   = ()    => ({ fillColor: '#333', fillOpacity: 0.8, color: '#3BDAFF', radius: 4, weight: 1, className: 'points' });
+    const styleISObands   = (f) => rangeLookup[ f.properties.value ]?.[ COLOR_THEME ] ?? {};
+    const stylePoints     = () => ({ fillColor: '#333', fillOpacity: 0.8, color: '#3BDAFF', radius: 4, weight: 1, className: 'points' });
+    const styleGridMarker = () => ({ fillColor: '#000', fillOpacity: 0.1, color: '#000', weight: 0.5, className: 'grid' });
 
     /* ─── Main ───────────────────────────────────────────────────── */
     const init = async () => {
 
         const [ boundaryFeatures, pointData ] = await Promise.all([
-            getKEGeoJSON(),
+            getKZGeoJSON(),
             getPointDataNew()
         ]);
 
@@ -361,13 +363,38 @@
 
         /* Reference points */
         if ( SHOW_POINTS ) {
+            console.log( 'refPoints', refPoints );
             refPoints.forEach( ( { coords, val } ) => {
-                L.circleMarker( coords, stylePoints() )
+                L.circleMarker( [coords[1],coords[0]], stylePoints() )
                  .bindTooltip( `<h4>${ val }</h4>` )
                  .addTo( leafmap );
             });
         }
 
+        if ( SHOW_GRID ) {
+
+            L.geoJSON(grid, {
+                pointToLayer: function (feature, latlng) {
+                    
+                    // Extract properties from the current feature
+                    const labelText = feature.properties.value;
+                    const countValue = feature.properties.value;
+
+                    // Create a custom L.divIcon dynamically populated with HTML text
+                    const customDivIcon = L.divIcon({
+                        className: 'custom-map-label', // CSS class for overall styling
+                        html: `<div class="marker-wrapper">
+                                <span class="badge">${countValue}</span>
+                                </div>`,
+                        iconSize: [60, 40],            // Explicit sizing prevents displacement
+                        iconAnchor: [30, 20]           // Anchor [X, Y] pins the center of the icon
+                    });
+
+                    // Return a standard marker bound to your custom L.divIcon
+                    return L.marker(latlng, { icon: customDivIcon });
+                }
+            }).addTo( leafmap );
+        }
 
     };
 
