@@ -70,10 +70,12 @@
     const SHOW_POINTS              = true;
     const SHOW_GRID                = false;
     const SMOOTH_ITERATIONS        = 0;      // 0 = off
-    const COLOR_THEME             = 'blueRed'; // 'default' | 'heat' | 'snow' | 'glacier' | 'blueGreen' | 'blueRed' | 'greenBlue'
+    const COLOR_THEME              = 'blueRed'; // 'default' | 'heat' | 'snow' | 'glacier' | 'blueGreen' | 'blueRed' | 'greenBlue'
+    // const OVERRIDE_COLOR_OPACITY   = 0.8;    // 0-1, higher = more opaque
     const INTERPOLATION_UNITS      = 'kilometers';
     const INTERPOLATION_UNIT_CELL_SIZE  = 10;   // kilometers/degrees
-    const INTERPOLATION_WEIGHT     = 8;  // 1-10, higher = more influence from nearby points (distance-decay weighting)
+    const INTERPOLATION_WEIGHT     = 10;  // 1-10, higher = more influence from nearby points (distance-decay weighting)
+    const INTERPOLATION_GRID_TYPE = 'triangle'; // defines the output format based on a Grid Type (options: 'square' | 'point' | 'hex' | 'triangle') (default 'square')
     // const DATA_FILE_AGENT_FILTER   = 'ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS'; // 'data.json' | 'data.csv'
 
     /* ─── Visual theme palettes ──────────────────────────────────── */
@@ -285,11 +287,19 @@
         const grid = turf.interpolate(
             turf.featureCollection( pointArr ),
             INTERPOLATION_UNIT_CELL_SIZE,
-            { gridType: 'points', property: 'value', units: INTERPOLATION_UNITS, weight: INTERPOLATION_WEIGHT }
+            { gridType: INTERPOLATION_GRID_TYPE, property: 'value', units: INTERPOLATION_UNITS, weight: INTERPOLATION_WEIGHT }
         );
         
         grid.features.forEach( f => ( f.properties.value = parseFloat( f.properties.value ).toFixed( 2 ) ) );
         console.log( 'grid', grid );
+
+        if ( INTERPOLATION_GRID_TYPE != 'point') {
+            grid.features.forEach( f => {
+                const center = turf.centroid(turf.polygon(f.geometry.coordinates));
+                f.geometry.coordinates = center.geometry.coordinates;
+                f.geometry.type = 'Point';
+            });
+        }
 
         /* Isobands */
         const PALETTE_ISO_BREAKS = [...paletteClassRanges.map( row => row.min ), Math.ceil( sortedVals[sortedVals.length - 1] )];
