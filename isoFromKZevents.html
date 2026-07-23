@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Isobands – Kenya</title>
+    <title>Isobands – KZ</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"
@@ -20,7 +20,7 @@
     <script src="SmoothWheelZoom.js"></script>
     <script src="isobands.js"></script>
 
-    <style type="text/css" id="mapStyles">
+    <style type="text/css" id="mapDefaults">
         * { box-sizing: border-box; }
 
         body {
@@ -34,12 +34,6 @@
         }
 
         svg path:focus          { outline: none; }
-
-        .intersections {
-            stroke-width: 2px;
-            stroke-opacity: 0.35;
-            stroke: #fff;
-        }
 
         .strokeLinesHidden {
             stroke: none;
@@ -57,7 +51,17 @@
         }
 
         svg path.points       { display: block; filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.25)); z-index: 9999;}
-        /* svg path.intersections { display: block; } */
+
+    </style>
+
+    <style type="text/css" id="mapStyleDynamics">
+
+        .contour {
+            stroke-width: 2px;
+            stroke-opacity: 0.35;
+            stroke: #fff;
+        }
+
     </style>
 
 </head>
@@ -71,22 +75,25 @@
     var g_queryDataSources = {};
 
     /* ─── Config ────────────────────────────────────────────────── */
-    const RUN_CONTOUR_CLIPPING     = true;
-    const SHOW_CONTOUR_SHADOW      = false;
-    const SHOW_POINTS              = false;
-    const POINT_RADIUS             = 3;
-    const SHOW_GRID                = false;
-    const GRID_VALUE_ROUNDING      = 2;
-    const SHOW_CONTOUR_EDGELINE    = true;   // ISO contour edge line is shown (white) Y/N
-    const CONTOUR_EDGELINE_COLOR   = '#fff';   // ISO contour edge line color
-    const CONTOUR_EDGELINE_WIDTH   = 0.5;   // ISO contour edge line color
-    const SMOOTH_ITERATIONS        = 5;      // 0 = off
-    const COLOR_THEME              = 'goldstein'; // 'default' | 'heat' | 'snow' | 'glacier' | 'lava' | 'blueGreen' | 'blueRed' | 'greenBlue'
-    const OVERRIDE_COLOR_OPACITY   = 0.6;    // 0-1, higher = more opaque
-    const INTERPOLATION_UNITS      = 'kilometers';
-    const INTERPOLATION_UNIT_CELL_SIZE  = 10;   // kilometers/degrees
-    const INTERPOLATION_WEIGHT     = 3;  // 1-10, higher = more influence from nearby points (distance-decay weighting)
-    const INTERPOLATION_GRID_TYPE  = 'point'; // defines the output format based on a Grid Type (options: 'square' | 'point' | 'hex' | 'triangle') (default 'square')
+    const RUN_CONTOUR_CLIPPING      = false;
+    const SHOW_CONTOUR_SHADOW       = true;
+    const SHOW_GRID                 = false;
+    const SHOW_DATA_POINTS          = false;
+    const POINT_RADIUS              = 3;
+    const GRID_VALUE_ROUNDING       = 2;    // kriging would probably apply gaussian/other smoothing/averaging
+
+    const OVERRIDE_CONTOUR_FILL_OPACITY  = 0;    // 0-1, higher = more opaque
+    const CONTOUR_EDGE_COLOR        = '#FFF';   // ISO contour edge line color
+    const CONTOUR_EDGE_SIZE         = 1;   // ISO contour edge line color
+    const CONTOUR_EDGE_OPACITY      = 0;   // ISO contour edge line color
+    const COLOR_THEME               = 'goldstein'; // 'default' | 'heat' | 'snow' | 'glacier' | 'lava' | 'goldstein' | 'blueGreen' | 'blueRed' | 'greenBlue'
+
+    const SMOOTH_ITERATIONS         = 0;      // 0 = off
+
+    const INTERPOLATION_GRID_UNIT   = 'kilometers';
+    const INTERPOLATION_GRID_SIZE   = 3;   // kilometers/degrees
+    const INTERPOLATION_DECAY_WEIGHT = 2;  // 1-10, higher = more influence from nearby points (distance-decay weighting)
+    const INTERPOLATION_GRID_TYPE   = 'square'; // defines the output format based on a Grid Type ('square' | 'point' | 'hex' | 'triangle') 
     // const DATA_FILE_AGENT_FILTER   = 'ABNORMAL_AGGRESSIVE_BEHAVIOUR_DOGS'; // 'data.json' | 'data.csv'
 
     /* ─── Visual theme palettes ──────────────────────────────────── */
@@ -230,8 +237,8 @@
             lookup[ key ] = {};
             // Object.keys( palettes ).forEach( theme => {
                 lookup[ key ][ theme ] = PALETTES[ theme ][ i ];
-                if ( OVERRIDE_COLOR_OPACITY > 0 ) {
-                    lookup[ key ][ theme ].fillOpacity = OVERRIDE_COLOR_OPACITY;
+                if ( OVERRIDE_CONTOUR_FILL_OPACITY > 0 ) {
+                    lookup[ key ][ theme ].fillOpacity = OVERRIDE_CONTOUR_FILL_OPACITY;
                 }
             // });
         }
@@ -302,6 +309,11 @@
     /* ─── Main ───────────────────────────────────────────────────── */
     const init = async () => {
 
+        // update style settings (for leaflet)
+        document.getElementById( 'mapStyleDynamics' ).innerHTML = `
+            .contour { stroke-width: ${ CONTOUR_EDGE_SIZE }px; stroke-opacity: ${CONTOUR_EDGE_OPACITY}; stroke: ${ CONTOUR_EDGE_COLOR }; }
+        `;
+
         /* Build Turf point features */
 
         // load boundary layer (for clipping) and point data (for interpolation)
@@ -344,14 +356,12 @@
         /* Interpolation */
         const grid = turf.interpolate(
             turf.featureCollection( pointArr ),
-            INTERPOLATION_UNIT_CELL_SIZE,
-            { gridType: INTERPOLATION_GRID_TYPE, property: 'value', units: INTERPOLATION_UNITS, weight: INTERPOLATION_WEIGHT }
+            INTERPOLATION_GRID_SIZE,
+            { gridType: INTERPOLATION_GRID_TYPE, property: 'value', units: INTERPOLATION_GRID_UNIT, weight: INTERPOLATION_DECAY_WEIGHT }
         );
 
         // round grid values down to custom decimal places for display
         grid.features.forEach( f => ( f.properties.value = parseFloat( f.properties.value ).toFixed( GRID_VALUE_ROUNDING ) ) );
-
-        g_queryDataSources[ 'grid' ] = grid;
 
         if ( ! localStorage.getItem( 'refPoints' )) {
             localStorage.setItem( 'refPoints', JSON.stringify( refPoints ) );
@@ -375,11 +385,31 @@
         //@Greg: commonProperties > create a function to dynamically set properties for rendering tool (Leaflet/MapLibre): each may require different properties for rendering (e.g., fill-opacity, color, line-width, etc.)
         const isobandFC  = turf.flatten( turf.isobands( grid, PALETTE_ISO_BREAKS, {
             zProperty: 'value',
-            commonProperties: { 'fill-opacity': OVERRIDE_COLOR_OPACITY > 0 ? OVERRIDE_COLOR_OPACITY : 1, 'stroke': CONTOUR_EDGELINE_COLOR, 'stroke-width': SHOW_CONTOUR_EDGELINE ? CONTOUR_EDGELINE_WIDTH : 0, 'stroke-opacity': 0.35 }, //line-color+line-width added for testing in MapLibre GL JS (not Leaflet)
+            commonProperties: { 'fill-opacity': OVERRIDE_CONTOUR_FILL_OPACITY > 0 ? OVERRIDE_CONTOUR_FILL_OPACITY : 1, 'stroke': CONTOUR_EDGE_COLOR, 'stroke-width': CONTOUR_EDGE_SIZE, 'stroke-opacity': 0.35 }, //line-color+line-width added for testing in MapLibre GL JS (not Leaflet)
             breaksProperties: rangePaletteGroups.map( p => ({ fill: p?.fill || p?.fillColor }) )
         }) );
 
         g_queryDataSources[ 'isobandFC' ] = isobandFC;
+
+        grid.features.forEach( f => {
+            const rangeKey = PALETTE_ISO_BREAKS.reduce( ( acc, val, i, arr ) => {
+                if ( i < arr.length - 1 && f.properties.value >= val && f.properties.value < arr[ i + 1 ] ) {
+                    acc = `${ val }-${ arr[ i + 1 ] }`;
+                }
+                return acc;
+            }, null );
+            f.properties.rangeKey = rangeKey;
+            try{
+                f.properties[ 'fill' ] = paletteClassRanges.find( p => parseFloat( f.properties.value ) <= p.min && parseFloat( f.properties.value ) <= p.max )?.text || '#000';
+            }
+            catch( e ) {
+                console.warn( 'Error setting fill color for grid feature:', e, f );
+            } 
+            
+            f.properties[ 'fill-opacity' ] = OVERRIDE_CONTOUR_FILL_OPACITY > 0 ? OVERRIDE_CONTOUR_FILL_OPACITY : 1;
+        });
+
+        g_queryDataSources[ 'grid' ] = grid;
 
         var intersections;
 
@@ -420,7 +450,7 @@
             if ( intersections.features.length ) {
                 const isoLayer = L.geoJson( intersections, {
                     style:          styleISObands,
-                    className:      ( SHOW_CONTOUR_EDGELINE ? 'intersections' : 'strokeLinesHidden' ) + ( SHOW_CONTOUR_SHADOW ? ' shadow' : '' ),
+                    className:      ( CONTOUR_EDGE_SIZE > 0 ? 'contour' : 'strokeLinesHidden' ) + ( SHOW_CONTOUR_SHADOW ? ' shadow' : '' ),
                     onEachFeature:  onEachBoundaryFeature
                 }).addTo( leafmap );
 
@@ -433,7 +463,7 @@
             if ( isobandFC.features.length ) {
                 const isoLayer = L.geoJson( isobandFC, {
                     style:          styleISObands,
-                    className:      ( SHOW_CONTOUR_EDGELINE ? 'intersections' : 'strokeLinesHidden' ) + ( SHOW_CONTOUR_SHADOW ? ' shadow' : '' ),
+                    className:      ( CONTOUR_EDGE_SIZE > 0 ? 'contour' : 'strokeLinesHidden' ) + ( SHOW_CONTOUR_SHADOW ? ' shadow' : '' ),
                     onEachFeature:  onEachBoundaryFeature
                 }).addTo( leafmap );
 
@@ -444,7 +474,7 @@
         }
 
         /* Reference points */
-        if ( SHOW_POINTS ) {
+        if ( SHOW_DATA_POINTS ) {
             console.log( 'refPoints', refPoints );
             refPoints.forEach( ( { coords, val } ) => {
                 L.circleMarker( [coords[1],coords[0]], stylePoints() )
